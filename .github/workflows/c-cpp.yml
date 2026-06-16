@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Compilar programa
+      run: gcc arquivo-ox.c function_tabu.c -o arquivo-ox
+
+    - name: Executar programa
+      run: |
+        ./arquivo-ox tabuleiro.txt O O O X X X O O O
+        cat tabuleiro.txt
+
+    - name: Compilar testes
+      run: gcc test_arquivo-ox.c function_tabu.c -o teste
+
+    - name: Executar testes
+      run: ./teste
