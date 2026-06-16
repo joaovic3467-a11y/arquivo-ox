@@ -31,6 +31,6 @@ void gravar(char matriz[3][3], char nomeArquivo[])
 
     fprintf(arquivo, "\n");
     fprintf(arquivo, "Criado por João victor silva sousa");
-s
+
     fclose(arquivo);
 }
