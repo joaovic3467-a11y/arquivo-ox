@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+
+
 {
     if (c == 'X' || c == 'O')
         return 1;
