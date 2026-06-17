@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-int validar(char c)
 {
     if (c == 'X' || c == 'O')
         return 1;
