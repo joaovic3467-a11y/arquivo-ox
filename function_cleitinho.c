@@ -12,7 +12,7 @@ int gravar(char matriz[3][3], char cleitinhoarq[])
 {
     FILE *arquivo;
 
-    arquivo = fopen(cletinhoarq, "w");
+    arquivo = fopen(cleitinhoarq, "w");
 
     if(arquivo == NULL)
     {
