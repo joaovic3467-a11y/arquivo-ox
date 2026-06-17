@@ -8,11 +8,11 @@ int validar(char c)
     return 0;
 }
 
-int gravar(char matriz[3][3], char skibidiArquivo[])
+int gravar(char matriz[3][3], char cleitinhoarq[])
 {
     FILE *arquivo;
 
-    arquivo = fopen(skibidiArquivo, "w");
+    arquivo = fopen(cletinhoarq, "w");
 
     if(arquivo == NULL)
     {
