@@ -1,27 +1,33 @@
-name: CI
+name: C Project
 
 on:
   push:
   pull_request:
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Compilar programa
-      run: gcc arquivo-ox.c -o arquivo-ox
+      - name: Compilar programa principal
+        run: |
+          gcc ./arquivo-ox.c -o arquivo-ox
 
-    - name: Executar programa
-      run: |
-        ./arquivo-ox cleitinho.txt O O O X X X O O O
-        
+      - name: Executar programa
+        run: |
+          ./arquivo-ox cleitinhoarq.txt O O O X X X O O O
 
-    - name: Compilar testes
-      run: gcc test_arquivo-ox.c -o teste_arquivo-ox
+      - name: Verificar arquivo gerado
+        run: |
+          test -f cleitinhoarq.txt
 
-    - name: Executar testes
-      run: ./test_arquivo-ox
+      - name: Compilar testes
+        run: |
+          gcc test_arquivo-ox.c -o test_arquivo-ox
+
+      - name: Executar testes
+        run: |
+          ./test_arquivo-ox
