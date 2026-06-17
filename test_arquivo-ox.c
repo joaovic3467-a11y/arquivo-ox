@@ -1,7 +1,5 @@
 #include <assert.h>
 
-int validar(char c);
-
 int main()
 {
     /* Casos válidos */
