@@ -17,7 +17,7 @@ int gravar(char matriz[3][3], char cleitinhoarq[])
     if(arquivo == NULL)
     {
         printf("Erro ao criar arquivo\n");
-        return;
+        return = 0;
     }
 
     fprintf(arquivo, "| %c | %c | %c |\n",
