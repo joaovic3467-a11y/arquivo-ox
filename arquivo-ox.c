@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int validar(char c);
 void gravar(char matriz[3][3], char nomeArquivo[]);
 
 int main(int argc, char *argv[])
