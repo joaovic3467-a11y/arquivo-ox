@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Compilar programa
-      run: gcc arquivo-ox.c function_tabu.c -o arquivo-ox
+      run: gcc arquivo-ox.c function_tabuleiro.c -o arquivo-ox
 
     - name: Executar programa
       run: |
@@ -21,7 +21,7 @@ jobs:
         cat tabuleiro.txt
 
     - name: Compilar testes
-      run: gcc test_arquivo-ox.c function_tabu.c -o teste
+      run: gcc test_arquivo-ox.c function_tabuleiro.c -o teste
 
     - name: Executar testes
       run: ./teste
