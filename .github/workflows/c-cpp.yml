@@ -17,11 +17,11 @@ jobs:
 
     - name: Executar programa
       run: |
-        ./arquivo-ox tabuleiro.txt O O O X X X O O O
-        cat tabuleiro.txt
+        ./arquivo-ox cleitinho.txt O O O X X X O O O
+        
 
     - name: Compilar testes
-      run: gcc test_arquivo-ox.c function_tabuleiro.c -o teste
+      run: gcc test_arquivo-ox.c function_tabuleiro.c -o teste_arquivo-ox
 
     - name: Executar testes
-      run: ./teste
+      run: ./test_arquivo-ox
