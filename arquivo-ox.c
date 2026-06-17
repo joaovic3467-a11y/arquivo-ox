@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "function_skibidi.c"
+#include "function_cleitinhoarq.c"
 
 int validar(char c);
-int gravar(char matriz[3][3], char skibidiArquivo[]);
+int gravar(char matriz[3][3], char cletinhoarq[]);
 
 int main(int argc, char *argv[])
 {
