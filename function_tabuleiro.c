@@ -2,7 +2,7 @@
 
 int validar(char c)
 {
-    if(c == 'X' || c == 'O')
+    if (c == 'X' || c == 'O')
         return 1;
 
     return 0;
@@ -14,7 +14,7 @@ void gravar(char matriz[3][3], char nomeArquivo[])
 
     arquivo = fopen(nomeArquivo, "w");
 
-    if(arquivo == NULL)
+    if (arquivo == NULL)
     {
         printf("Erro ao criar arquivo\n");
         return;
