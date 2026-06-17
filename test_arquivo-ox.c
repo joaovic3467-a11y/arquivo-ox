@@ -1,5 +1,5 @@
 #include <assert.h>
-#include "function_cleitinhoarq.c"
+#include "function_cleitinho.c"
 
 int validar(char c);
 
