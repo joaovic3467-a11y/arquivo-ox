@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "function_cleitinhoarq.c"
+#include "function_cleitinho.c"
 
 int validar(char c);
 int gravar(char matriz[3][3], char cletinhoarq[]);
